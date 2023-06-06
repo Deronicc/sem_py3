@@ -16,17 +16,24 @@ import random
 
 n = int(input("Введите кол-во элементом в массиве: "))
 x = int(input("Введите число, которое нужно вычислить (сколько раз встречается в массиве): "))
-schetchik = 0
+count = 0
  
 # создание массива с рандомными элементами от 1 до 5
-list_1=[]
+list=[]
 for i in range(n):
-    list_1.append(random.randint(1,5))
-print(list_1)
+    list.append(random.randint(1,5))
+print(list)
+
+# # выписывание кажого элемента из массива
+# for elementi in range(len(list_1)):
+#     # print(list_1[elementi]) 
+#     if list_1[elementi] == x: # счетчик
+#         schetchik += 1
+# print("число", x, "встречается в массие", schetchik, "раз(-а)")
 
 # выписывание кажого элемента из массива
-for elementi in range(len(list_1)):
+for elementi in list:
     # print(list_1[elementi]) 
-    if list_1[elementi] == x: # счетчик
-        schetchik += 1
-print("число", x, "встречается в массие", schetchik, "раз(-а)")
+    if elementi == x: # счетчик
+        count += 1
+print("число", x, "встречается в массие", count, "раз(-а)")
