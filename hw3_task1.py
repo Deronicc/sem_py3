@@ -26,7 +26,7 @@ print(list_1)
 
 # выписывание кажого элемента из массива
 for elementi in range(len(list_1)):
-    print(list_1[elementi]) 
+    # print(list_1[elementi]) 
     if list_1[elementi] == x: # счетчик
         schetchik += 1
 print("число", x, "встречается в массие", schetchik, "раз(-а)")
