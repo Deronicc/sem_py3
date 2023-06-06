@@ -24,13 +24,6 @@ for i in range(n):
     list.append(random.randint(1,5))
 print(list)
 
-# # выписывание кажого элемента из массива
-# for elementi in range(len(list_1)):
-#     # print(list_1[elementi]) 
-#     if list_1[elementi] == x: # счетчик
-#         schetchik += 1
-# print("число", x, "встречается в массие", schetchik, "раз(-а)")
-
 # выписывание кажого элемента из массива
 for elementi in list:
     # print(list_1[elementi]) 
